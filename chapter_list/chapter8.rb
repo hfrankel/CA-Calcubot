@@ -1,4 +1,8 @@
-puts "Chapter 8
+def chapter8
+  puts "
+  █▀▀ █░░█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█   ▄▀▀▄
+  █░░ █▀▀█ █▄▄█ █░░█ ░░█░░ █▀▀ █▄▄▀   ▄▀▀▄
+  ▀▀▀ ▀░░▀ ▀░░▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀   ▀▄▄▀
 
 Isle of Dawn, off Angland Coast
 
@@ -27,3 +31,4 @@ OPTION:
 (1) equip Schvaytee's Pocketwatch
 
 Calcubot and Alouise exit."
+end

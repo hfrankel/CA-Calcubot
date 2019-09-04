@@ -1,4 +1,8 @@
-puts "Chapter 6
+def chapter6 
+  puts "
+  █▀▀ █░░█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█   ▄▀▀▄
+  █░░ █▀▀█ █▄▄█ █░░█ ░░█░░ █▀▀ █▄▄▀   █▄▄░
+  ▀▀▀ ▀░░▀ ▀░░▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀   ▀▄▄▀
 
 Our gang find themselves in Bladderpool. Alouise says she is going to go to
 the Shady Pines Tavern to try get more information. She tells Calcubot to
@@ -24,3 +28,4 @@ in the posession of the Daemon, Greg on the Isle of Dawn.
 
 We must find a ship that can take us. The closest port is at Portsmath.
 Calcubot and Alouise head to Portsmath."
+end

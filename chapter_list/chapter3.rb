@@ -1,4 +1,8 @@
-puts "Chapter 3
+def chapter3
+  puts "
+  █▀▀ █░░█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█   █▀▀█
+  █░░ █▀▀█ █▄▄█ █░░█ ░░█░░ █▀▀ █▄▄▀   ░░▀▄
+  ▀▀▀ ▀░░▀ ▀░░▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀   █▄▄█
 
 Whittaker Forest, Angland
 
@@ -13,3 +17,4 @@ OPTIONS:
 (1) repair shelf
 (2) leave
 (3) steal strange item"
+end

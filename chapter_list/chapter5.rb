@@ -1,4 +1,8 @@
-puts "Chapter 5
+def chapter5
+  puts "
+  █▀▀ █░░█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█   █▀▀
+  █░░ █▀▀█ █▄▄█ █░░█ ░░█░░ █▀▀ █▄▄▀   ▀▀▄
+  ▀▀▀ ▀░░▀ ▀░░▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀   ▄▄▀
 
 Meeting with The Oracle. The Oracle says she will tell Calcubot how to get home.
 But for a price. She wants his gold antenna for her collection of rare items.
@@ -15,3 +19,4 @@ OPTIONS:
 The Oracle does not know exactly where Calcubot must go to return home but she
 has a feeling that the answer to that question can be found at
 Shady Pines in Bladderpool."
+end

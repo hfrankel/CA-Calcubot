@@ -1,4 +1,9 @@
-puts "Chapter 9
+def chapter9 
+  puts "
+  █▀▀ █░░█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█   ▄▀▀▄
+  █░░ █▀▀█ █▄▄█ █░░█ ░░█░░ █▀▀ █▄▄▀   ▀▄▄█
+  ▀▀▀ ▀░░▀ ▀░░▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀   ░▄▄▀
+  
 Isle of Dawn, off Angland Coast
 
 Calcubot and Alouise are heading back to Gammy's ship.
@@ -19,3 +24,4 @@ Calcubot is frozen.
 OPTIONS:
 (1) try talk Alouise into letting you keep the pocketwatch
 (2) fight Alouise [EXT]"
+end

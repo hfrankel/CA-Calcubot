@@ -1,4 +1,8 @@
-puts "Chapter 7
+def chapter7
+  puts "
+  █▀▀ █░░█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█   ▀▀▀█
+  █░░ █▀▀█ █▄▄█ █░░█ ░░█░░ █▀▀ █▄▄▀   ░░█░
+  ▀▀▀ ▀░░▀ ▀░░▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀   ░▐▌░
 
 Portsmath, Angland
 
@@ -19,3 +23,4 @@ OPTIONS:
 (1) Catch up to \"Ol' Gammy Leg\" and politely ask for her help
 (2) Shout \"Ol' Gammy Leg!\" then ask for her help
 (3) Shout \"Oi!\" and whistle at Gammy then demand her help"
+end

@@ -1,8 +1,8 @@
-puts "Calcubot"
-
-gets.chomp
-
-puts "Chapter 1
+def chapter1
+  puts "
+  █▀▀ █░░█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█   ▄█░
+  █░░ █▀▀█ █▄▄█ █░░█ ░░█░░ █▀▀ █▄▄▀   ░█░
+  ▀▀▀ ▀░░▀ ▀░░▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀   ▄█▄
 
 2066
 
@@ -23,3 +23,4 @@ doctor's time & universe machine sitting in the corner and engages
 the time mechanism.
 
 Calcubot is sent back in time 1000 years to an alternate universe..."
+end
