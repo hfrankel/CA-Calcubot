@@ -9,6 +9,7 @@ require_relative "./chapter_list/chapter8.rb"
 require_relative "./chapter_list/chapter9.rb"
 require_relative "./chapter_list/chapter10a.rb"
 require_relative "./chapter_list/chapter10b.rb"
+require_relative "./lib.rb"
 
 require "colorize"
 
@@ -48,6 +49,8 @@ e_ch1_op = gets.chomp
 chapter2
 
 gets.chomp
+
+p fight(ch001, ch003)
 
 puts "Calcubot encounters Alouise Smyth, a witch posessing a magical staff."
 
