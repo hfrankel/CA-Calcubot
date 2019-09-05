@@ -12,6 +12,7 @@ require_relative "./chapter_list/chapter10b"
 require_relative "./lib"
 
 require "colorize"
+require "io/console"
 
 # Character list
 
@@ -40,32 +41,18 @@ puts "
 Press Enter
 "
 
-# Main options menu
 gets.chomp
-
-puts "OPTIONS:
-(1) New Game
-(2) Change Difficulty
-(3) HELP
-
-Press 1, 2 or 3
-
-"
-# op => "options"
-# e => "end"
-
-op_page_main_menu_choice = gets.chomp
 
 # //////////////////////////////
 
 chapter1
-e_ch1_op = gets.chomp
+gets.chomp
 
 # //////////////////////////////
   
 chapter2
 
-winner = fight(calcubot, gang_member_1)
+winner_ch2 = fight(calcubot, gang_member_1)
 
 main_choice_ch2_op = gets.chomp.to_i
 
@@ -76,18 +63,18 @@ when 1
 Suddenly a hidden figure appears. The gang members spot the figure and
 immediately flee.
 
-It is the witch #{alouise_smyth.name}"
+It is the witch #{alouise_smyth.name}."
 when 2
-  if winner == true
+  if winner_ch2 == true
     puts "#{calcubot.name} wins!
 
 It encounters Alouise Smyth, a witch posessing a magical staff."
   else
-    puts "#{calcubot.name}"
+    puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
   end
 end
 
-e_ch2_op = gets.chomp
+gets.chomp
 
 # //////////////////////////////
 
@@ -99,53 +86,189 @@ case main_choice_ch3_op
 when 1
   puts "For repairing shelf, #{calcubot.name} has been gifted...
 
-INSERT ITEM HERE!!!!"
+=> +health"
 when 2
-  puts "#{calcubot.name} and #{alouise_smyth.name}"
-when 3
-  puts "#{calcubot.name} takes item => EQUIP ITEM HERE!!!"
+  puts "#{calcubot.name} and #{alouise_smyth.name} depart."
 end
 
-e_ch3_op = gets.chomp
+gets.chomp
 
 # //////////////////////////////
 
 chapter4
-e_ch4_op = gets.chomp
+
+winner_ch4 = fight(calcubot, wild_bear)
+
+main_choice_ch4_op = gets.chomp.to_i
+
+case main_choice_ch4_op
+when 1
+  puts "Take the long road around the bear. => -health"
+when 2
+  puts "The bear runs off, spooked by the rock. => +health"
+when 3
+  if winner_ch4 == true
+    puts "#{calcubot.name} wins!
+
+=> +strength" 
+  else
+    puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
+  end
+end
+
+gets.chomp
 
 # //////////////////////////////
 
 chapter5
-e_ch5_op = gets.chomp
+
+winner_ch5 = fight(calcubot, the_oracle)
+
+main_choice_ch5_op = gets.chomp.to_i
+
+case main_choice_ch5_op
+when 1
+  puts "#{the_oracle.name} does not know exactly where Calcubot must go to
+return home but she has a feeling that the answer to that question can be
+found at Shady Pines in Bladderpool... => +health"
+when 2
+  puts "#{calcubot.name} sadly hands over to #{the_oracle.name} its golden
+antenna.
+
+#{the_oracle.name} does not know exactly where Calcubot must go to
+return home but she has a feeling that the answer to that question can be
+found at Shady Pines in Bladderpool... => -health"
+when 3
+  if winner_ch5 == true
+    puts "#{calcubot.name} wins!
+
+#{the_oracle.name} does not know exactly where Calcubot must go to
+return home but she has a feeling that the answer to that question can be
+found at Shady Pines in Bladderpool... => +health, +strength"
+  else
+    puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
+  end
+end
+
+gets.chomp
 
 # //////////////////////////////
 
 chapter6
-e_ch6_op = gets.chomp
+
+winner_ch6 = fight(calcubot, young_man)
+
+main_choice_ch6_op = gets.chomp.to_i
+
+case main_choice_ch6_op
+when 1
+  puts "\"Sorry not interested.\" #{calcubot.name} steps away.
+
+#{calcubot.name} meet's back up with Alouise who has more information. It is
+as she feared. There is only one item in Yourope that might be able to help.
+That is Schvaytee's Pocketwatch. A powerful watch that can manipulate
+time. It is in the posession of the Daemon, Greg on the Isle of Dawn.
+
+They must find a ship. The closest port is at Portsmath.
+Calcubot and Alouise head to Portsmath."
+when 2
+  puts "On this occasion #{calcubot.name} happens to get lucky and wins!
+=> +strength, +health
+
+#{calcubot.name} meet's back up with Alouise who has more information. It is
+as she feared. There is only one item in Yourope that might be able to help.
+That is Schvaytee's Pocketwatch. A powerful watch that can manipulate
+time. It is in the posession of the Daemon, Greg on the Isle of Dawn.
+
+They must find a ship. The closest port is at Portsmath.
+Calcubot and Alouise head to Portsmath."
+when 3
+  if winner_ch6 == true
+    puts "#{calcubot.name} wins!
+
+=> +strength" 
+  else
+    puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
+  end
+end
+
+gets.chomp
 
 # //////////////////////////////
 
 chapter7
-e_ch7_op = gets.chomp
+
+winner_ch7 = fight(calcubot, ol_gammy_leg)
+
+main_choice_ch7_op = gets.chomp.to_i
+
+case main_choice_ch7_op
+when 1
+  puts "#{ol_gammy_leg.name} agrees to help => +health"
+when 2
+  puts "Gammy agrees to help but you must trade the gold antenna.
+=> -health"
+when 3
+  if winner_ch7 == true
+    puts "#{calcubot.name} wins!
+
+=> +strength" 
+  else
+    puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
+  end
+end
+
+gets.chomp
 
 # //////////////////////////////
 
 chapter8
-e_ch8_op = gets.chomp
+
+main_choice_ch8_op = gets.chomp.to_i
+
+case main_choice_ch8_op
+when 1
+  puts "#{calcubot.name} takes Schvaytee's Pocketwatch
+=> +health
+
+#{calcubot.name} and #{alouise_smyth.name} exit."
+end
+
+gets.chomp
 
 # //////////////////////////////
 
 chapter9
-e_ch9_op = gets.chomp
+
+winner_ch9 = fight(calcubot, ol_gammy_leg)
+
+main_choice_ch9_op = gets.chomp.to_i
+
+case main_choice_ch9_op
+when 1
+  puts "She relents and lets Calcubot keep the pocketwatch => +health"
+when 2
+  if winner_ch9 == true
+    puts "#{calcubot.name} wins!
+
+#{calcubot.name} subdues Alouise and returns home => +health +strength"
+  else
+    puts "#{calcubot.name} loses but #{alouise_smyth.name} take pity.
+    
+She allows #{calcubot.name} to return home."
+  end
+end
+
+gets.chomp
   
 # //////////////////////////////
 
 chapter10a
-e_ch10a_op = gets.chomp
+gets.chomp
 
 # //////////////////////////////
-
-chapter10b
-e_ch10b_op = gets.chomp
-
-# //////////////////////////////
+puts "
+▀▀█▀▀ █░░█ █▀▀   █▀▀ █▀▀▄ █▀▀▄
+░░█░░ █▀▀█ █▀▀   █▀▀ █░░█ █░░█
+░░▀░░ ▀░░▀ ▀▀▀   ▀▀▀ ▀░░▀ ▀▀▀░
+"

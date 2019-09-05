@@ -28,7 +28,7 @@ device clicks.
 Calcubot takes the watch from Greg.
 
 OPTION:
-(1) equip Schvaytee's Pocketwatch
+(1) Equip Schvaytee's Pocketwatch
 
 Calcubot and Alouise exit."
 end

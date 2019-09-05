@@ -29,3 +29,4 @@ fight_hit = random_alpha_str - random_beta_str
 end
 
 
+

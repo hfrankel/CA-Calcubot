@@ -22,6 +22,6 @@ Calcubot is frozen.
 \"Now!\"
 
 OPTIONS:
-(1) try talk Alouise into letting you keep the pocketwatch
-(2) fight Alouise [EXT]"
+(1) Try talk Alouise into letting you keep the pocketwatch
+(2) Fight Alouise [EXT]"
 end

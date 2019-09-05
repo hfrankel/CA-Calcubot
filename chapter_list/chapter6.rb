@@ -19,13 +19,5 @@ the shell game table.
 OPTIONS:
 (1) Politely decline
 (2) Gamble with money you don't have
-(3) Gamble with money you don't have
-
-Meet back up with Alouise who has more information. It is as Alouise feared.
-There is only one item in Yourope that might be able to help. That is
-Schvaytee's Pocketwatch. A powerful watch that can manipulate time. It is
-in the posession of the Daemon, Greg on the Isle of Dawn.
-
-We must find a ship that can take us. The closest port is at Portsmath.
-Calcubot and Alouise head to Portsmath."
+(3) Gamble with money you don't have ...arrogantly."
 end
