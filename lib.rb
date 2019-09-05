@@ -8,9 +8,7 @@ class Character
     @health = health
     @strength = strength
   end
-
 end
-
 
 
 # Fight system
@@ -28,5 +26,37 @@ fight_hit = random_alpha_str - random_beta_str
   end
 end
 
+# Explain method and that it is a pseudo loop
 
+def validate_input_1option
+  begin
+    x = gets.chomp.to_i
+  raise "Incorrect Input" if x != 1
+  return x
+  rescue
+    puts "Please Enter 1"
+    validate_input_1option
+  end
+end
 
+def validate_input_2options
+  begin
+    x = gets.chomp.to_i
+  raise "Incorrect Input" if x != 1 && x != 2
+  return x
+  rescue
+    puts "Please Enter 1 or 2"
+    validate_input_2options
+  end
+end
+
+def validate_input_3options
+  begin
+    x = gets.chomp.to_i
+  raise "Incorrect Input" if x != 1 && x != 2 && x != 3
+  return x
+  rescue
+    puts "Please Enter 1, 2 or 3"
+    validate_input_3options
+  end
+end
