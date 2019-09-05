@@ -1,17 +1,34 @@
-require_relative "./chapter_list/chapter1.rb"
-require_relative "./chapter_list/chapter2.rb"
-require_relative "./chapter_list/chapter3.rb"
-require_relative "./chapter_list/chapter4.rb"
-require_relative "./chapter_list/chapter5.rb"
-require_relative "./chapter_list/chapter6.rb"
-require_relative "./chapter_list/chapter7.rb"
-require_relative "./chapter_list/chapter8.rb"
-require_relative "./chapter_list/chapter9.rb"
-require_relative "./chapter_list/chapter10a.rb"
-require_relative "./chapter_list/chapter10b.rb"
-require_relative "./lib.rb"
+require_relative "./chapter_list/chapter1"
+require_relative "./chapter_list/chapter2"
+require_relative "./chapter_list/chapter3"
+require_relative "./chapter_list/chapter4"
+require_relative "./chapter_list/chapter5"
+require_relative "./chapter_list/chapter6"
+require_relative "./chapter_list/chapter7"
+require_relative "./chapter_list/chapter8"
+require_relative "./chapter_list/chapter9"
+require_relative "./chapter_list/chapter10a"
+require_relative "./chapter_list/chapter10b"
+require_relative "./lib"
 
 require "colorize"
+
+# Character list
+
+calcubot = Character.new("Calcubot", 30, 30)
+alouise_smyth = Character.new("Alouise Smyth", 15, 100)
+gang_member_1 = Character.new("Gang Member 1", 7, 5)
+gang_member_2 = Character.new("Gang Member 2", 7, 5)
+gang_member_3 = Character.new("Gang Member 3", 7, 5)
+gang_member_4 = Character.new("Gang Member 4", 7, 5)
+wild_bear = Character.new("Bear", 10, 10)
+the_oracle = Character.new("The Oracle", 6, 20)
+old_man = Character.new("Old Man", 4, 3)
+young_man = Character.new("Young Man",7 ,8)
+shipmaster = Character.new("Shipmaster", 5, 5)
+ol_gammy_leg = Character.new("Ol' Gammy Leg", 8, 15)
+greg = Character.new("Greg", 100, 100)
+dr_finklefeinstein = Character.new("Dr. Henrikh Finklefeinstein", 7, 7)
 
 # Opening credits
 
@@ -48,19 +65,47 @@ e_ch1_op = gets.chomp
   
 chapter2
 
-gets.chomp
+winner = fight(calcubot, gang_member_1)
 
-p fight(ch001, ch003)
+main_choice_ch2_op = gets.chomp.to_i
 
-puts "Calcubot encounters Alouise Smyth, a witch posessing a magical staff."
+case main_choice_ch2_op
+when 1
+  puts "#{calcubot.name} surrenders peacefully
+
+Suddenly a hidden figure appears. The gang members spot the figure and
+immediately flee.
+
+It is the witch #{alouise_smyth.name}"
+when 2
+  if winner == true
+    puts "#{calcubot.name} wins!
+
+It encounters Alouise Smyth, a witch posessing a magical staff."
+  else
+    puts "#{calcubot.name}"
+  end
+end
 
 e_ch2_op = gets.chomp
-
-
 
 # //////////////////////////////
 
 chapter3
+
+main_choice_ch3_op = gets.chomp.to_i
+
+case main_choice_ch3_op
+when 1
+  puts "For repairing shelf, #{calcubot.name} has been gifted...
+
+INSERT ITEM HERE!!!!"
+when 2
+  puts "#{calcubot.name} and #{alouise_smyth.name}"
+when 3
+  puts "#{calcubot.name} takes item => EQUIP ITEM HERE!!!"
+end
+
 e_ch3_op = gets.chomp
 
 # //////////////////////////////
@@ -104,9 +149,3 @@ chapter10b
 e_ch10b_op = gets.chomp
 
 # //////////////////////////////
-
-case op_page_main_menu_choice
-when "1"
-  new_game_loop
-end
-
