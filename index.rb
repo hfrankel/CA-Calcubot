@@ -54,8 +54,8 @@ puts "
 █▀▀ █░░█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█   ▄█░
 █░░ █▀▀█ █▄▄█ █░░█ ░░█░░ █▀▀ █▄▄▀   ░█░
 ▀▀▀ ▀░░▀ ▀░░▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀   ▄█▄
-
-2066
+"
+puts "2066
 
 The mad scientist Dr. Henrikh Finklefeinstein has launched his latest
 invention.
@@ -113,9 +113,9 @@ immediately flee.
 It is the witch #{alouise_smyth.name}."
 when 2
   if winner_ch2 == true
-    puts "#{calcubot.name} wins!
+    puts "#{calcubot.name} wins!".blue.on_yellow.blink
 
-It encounters Alouise Smyth, a witch posessing a magical staff."
+puts "It encounters Alouise Smyth, a witch posessing a magical staff."
   else
     puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
   end
@@ -180,9 +180,9 @@ when 2
   puts "The bear runs off, spooked by the rock. => +health"
 when 3
   if winner_ch4 == true
-    puts "#{calcubot.name} wins!
+    puts "#{calcubot.name} wins!".blue.on_yellow.blink
 
-=> +strength" 
+puts "=> +strength" 
   else
     puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
   end
@@ -226,8 +226,9 @@ return home but she has a feeling that the answer to that question can be
 found at Shady Pines in Bladderpool... => -health"
 when 3
   if winner_ch5 == true
-    puts "#{calcubot.name} wins!
+    puts "#{calcubot.name} wins!".blue.on_yellow.blink
 
+puts "
 #{the_oracle.name} does not know exactly where #{calcubot.name} must go to
 return home but she has a feeling that the answer to that question can be
 found at Shady Pines in Bladderpool... => +health, +strength"
@@ -289,9 +290,9 @@ They must find a ship. The closest port is at Portsmath.
 #{calcubot.name} and Alouise head to Portsmath."
 when 3
   if winner_ch6 == true
-    puts "#{calcubot.name} wins!
+    puts "#{calcubot.name} wins!".blue.on_yellow.blink
 
-=> +strength" 
+puts "=> +strength" 
   else
     puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
   end
@@ -337,9 +338,9 @@ when 2
 => -health"
 when 3
   if winner_ch7 == true
-    puts "#{calcubot.name} wins!
+    puts "#{calcubot.name} wins!".blue.on_yellow.blink
 
-=> +strength" 
+puts "=> +strength" 
   else
     puts "#{calcubot.name} loses. #{alouise_smyth.name} revives."
   end
@@ -429,8 +430,9 @@ when 1
   puts "She relents and lets #{calcubot.name} keep the pocketwatch => +health"
 when 2
   if winner_ch9 == true
-    puts "#{calcubot.name} wins!
+    puts "#{calcubot.name} wins!".blue.on_yellow.blink
 
+puts "
 #{calcubot.name} subdues Alouise and returns home => +health +strength"
   else
     puts "#{calcubot.name} loses but #{alouise_smyth.name} take pity.

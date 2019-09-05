@@ -1,6 +1,12 @@
 #!/usr/bin/env sh
 
-// create a directory called dist
+# // create a directory called dist
 
-// copy all source code files to the directory dist
+mkdir dist
+
+cp calcubot dist
+
+# // copy all source code files to the directory dist
+
+# ./move_to_dist
 

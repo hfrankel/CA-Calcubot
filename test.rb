@@ -7,4 +7,3 @@ if argv_copy.include? "-h"
 end
 
 puts "running my program"
-gets.chomp

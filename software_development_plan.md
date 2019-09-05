@@ -29,3 +29,10 @@ The fight mode was added to bring more excitement to Calcubot, introducing rando
 
 Having the option for the user to choose their own character adds an increased level of personalisation and satisfaction from playing. The protagonist “Calcubot” was created as a character class object. Each character is created with the instance variable of being able to set the character’s name to a desired value using @name. Combining this with user input and harnessing string interpolation to place the character’s name throughout the entire story text, is a simple way to change the name to whatever the user wants, making the game more enjoyable.
 
+### <u>User Interaction and Experience</u>
+
+The game has a very simple UI. Once the game is loaded with the opening title, text displays the message “Press Enter For New Game OR e To Exit.” If the user presses enter they will be loaded into chapter 1 with a gets.chomp to prevent further progress. There are no options to choose from for chapter 1 and as the user has just had to press enter to proceed, it is intuitive to keep pressing enter to progress within the game. When it comes to the decision points they only have up to 3 options (“1”, “2” or “3”) and any invalid selection prompts a message stating which are the only available options for the user to continue. If the user still has any issues, more help can be found in the HELP.md file. The game flows well and the user will appreciate big, bold chapters headings to help navigate where they are in the story as well as flashing colorful “win” signs (using the colorize ruby gem) if they beat a challenger.
+
+### Control Flow Diagram
+
+### Implementation Plan
