@@ -33,6 +33,19 @@ Having the option for the user to choose their own character adds an increased l
 
 The game has a very simple UI. Once the game is loaded with the opening title, text displays the message “Press Enter For New Game OR e To Exit.” If the user presses enter they will be loaded into chapter 1 with a gets.chomp to prevent further progress. There are no options to choose from for chapter 1 and as the user has just had to press enter to proceed, it is intuitive to keep pressing enter to progress within the game. When it comes to the decision points they only have up to 3 options (“1”, “2” or “3”) and any invalid selection prompts a message stating which are the only available options for the user to continue. If the user still has any issues, more help can be found in the HELP.md file. The game flows well and the user will appreciate big, bold chapters headings to help navigate where they are in the story as well as flashing colorful “win” signs (using the colorize ruby gem) if they beat a challenger.
 
+### <u>Status Log</u>
+
+##### <u>Log Update - 04.07.2019</u>
+Target was to have a working skeleton program by the end of the day and for the program to run without errors. This was achieved.
+
+##### <u>Log Update - 05.07.2019</u>
+Target was to have a beta for the application ready to be released by the end of day. A few bugs held up progress but this outcome was eventually achieved. Another target was to have all documentation done but this was not achievable within the timeframe.
+
+##### <u>Log Update - 06.07.2019</u>
+Documentation complete and project submitted.
+
 ### Control Flow Diagram
+<img src ="./docs/calcubot_control_flow_diagram.jpg" alt="image">
 
 ### Implementation Plan
+<img src ="./docs/implementation_plan_example" alt="image>
