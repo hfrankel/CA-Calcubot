@@ -7,13 +7,12 @@ Help information
 
 Min System Requirements:
 
-Windows 7
-MacOS 10.6.6
-RAM 2GB
-x86-64 CPU
-
-Installation:
-
+Operating System - Windows 95 or later, Mac OS X 10 or later
+Processor Speed - Pentium 4, 3.2 GHz or Power PC G5, 2.0 GHz
+Memory - At least 512Mb
+Graphics Card - ATI Radeon 9800 w/ 256 MB video memory
+Hard Disk Space - At least 1GB
+Internet connection
 
 Game:
 

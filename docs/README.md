@@ -45,7 +45,7 @@ Target was to have a beta for the application ready to be released by the end of
 Documentation complete and project submitted.
 
 ### Control Flow Diagram
-<img src ="./docs/calcubot_control_flow_diagram.jpg" alt="image">
+<img src ="./calcubot_control_flow_diagram.jpg" alt="image">
 
 ### Implementation Plan
-<img src ="./docs/implementation_plan_example" alt="image>
+<img src ="./implementation_plan_example.png" alt="image">
