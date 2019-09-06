@@ -45,8 +45,6 @@ Target was to have a beta for the application ready to be released by the end of
 Documentation complete and project submitted.
 
 ### Control Flow Diagram
-![alt text](https://github.com/hfrankel/calcubot/blob/master/docs/calcubot_control_flow_diagram.jpg "calcubot_control_flow_diagram.jpg")
-
-<img src ="https://github.com/hfrankel/calcubot/blob/master/docs/calcubot_control_flow_diagram.jpg" alt="image">
+<img src ="./docs/calcubot_control_flow_diagram.jpg" alt="image">
 
 ### Implementation Plan
